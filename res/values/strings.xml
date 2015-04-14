@@ -2,7 +2,25 @@
 <resources>
 
     <string name="app_name">ICM</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    
+    <string name="nav_item_trends">动态</string>
+    <string name="nav_item_mine">我</string>
+    <string name="nav_item_Messages">消息</string>
+    
+    <!-- 抽屉导航标签 -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_trends</item>
+        <item>@string/nav_item_mine</item>
+        <item>@string/nav_item_Messages</item>
+    </string-array>
+    
+    <string name="title_trends">动态</string>
+    <string name="title_mine">我</string>
+    <string name="title_messages">消息</string>
+    
 
 </resources>

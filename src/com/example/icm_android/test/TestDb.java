@@ -1,27 +1,21 @@
-package com.example.icm_android;
+package com.example.icm_android.test;
 
 import java.util.List;
 
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.example.icm_android.db.DBHandler;
 import com.example.icm_android.model.Club;
 import com.example.icm_android.model.User;
 
-public class MainActivity extends ActionBarActivity {
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+public class TestDb {
+	
+	public static void testDb(Context context){
 		
-		DBHandler db = new DBHandler(this);
+		DBHandler db = new DBHandler(context);
 		
-	/*	//--------------------------------------------------------------------------------------------------------
+		/*	//--------------------------------------------------------------------------------------------------------
 		//测试用户表的读写
 		//写
 		User user = new User("20132100028", "冼立志", "1234");
@@ -136,27 +130,6 @@ public class MainActivity extends ActionBarActivity {
 				}else{
 					System.out.println("通过clubId不能找到社团中的所有成员");
 				}
-		
-		
-		
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
 }
